@@ -518,7 +518,6 @@ class GoogleMapState extends GoogleMapStateBase {
       ..mapTypeControl = widget.webPreferences.mapTypeControl
       ..scrollwheel = widget.webPreferences.scrollwheel
       ..panControl = widget.webPreferences.panControl
-      ..overviewMapControl = widget.webPreferences.overviewMapControl
       ..rotateControl = widget.webPreferences.rotateControl
       ..scaleControl = widget.webPreferences.scaleControl
       ..zoomControl = widget.webPreferences.zoomControl
