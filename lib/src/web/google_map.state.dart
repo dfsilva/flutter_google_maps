@@ -4,7 +4,7 @@
 
 import 'dart:html';
 import 'dart:async';
-import 'dart:ui' as ui;
+import 'dart:ui' as dart_ui;
 
 import 'package:flutter/widgets.dart';
 import 'package:flutter/scheduler.dart' show SchedulerBinding;
@@ -137,7 +137,7 @@ class GoogleMapState extends GoogleMapStateBase {
     String info,
     String infoSnippet,
     ValueChanged<String> onTap,
-    ui.VoidCallback onInfoWindowTap,
+        dart_ui.VoidCallback onInfoWindowTap,
   }) {
     assert(() {
       if (position == null) {
@@ -534,10 +534,10 @@ class GoogleMapState extends GoogleMapStateBase {
     GeoCoord center,
     double radius, {
     ValueChanged<String> onTap,
-    ui.Color strokeColor = const Color(0x000000),
+        dart_ui.Color strokeColor = const Color(0x000000),
     double strokeOpacity = 0.8,
     double strokeWidth = 1,
-    ui.Color fillColor = const Color(0x000000),
+        dart_ui.Color fillColor = const Color(0x000000),
     double fillOpacity = 0.35,
   }) {
     assert(() {
@@ -595,10 +595,10 @@ class GoogleMapState extends GoogleMapStateBase {
     GeoCoord center,
     double radius, {
     ValueChanged<String> onTap,
-    ui.Color strokeColor = const Color(0x000000),
+        dart_ui.Color strokeColor = const Color(0x000000),
     double strokeOpacity = 0.8,
     double strokeWidth = 1,
-    ui.Color fillColor = const Color(0x000000),
+        dart_ui.Color fillColor = const Color(0x000000),
     double fillOpacity = 0.35,
   }) {
     removeCircle(id);
@@ -645,7 +645,7 @@ class GoogleMapState extends GoogleMapStateBase {
     _createMapOptions();
 
     if (_map == null) {
-      ui.platformViewRegistry.registerViewFactory(htmlId, (int viewId) {
+      dart_ui.platformViewRegistry?.registerViewFactory(htmlId, (int viewId) {
         final elem = DivElement()
           ..id = htmlId
           ..style.width = '100%'
