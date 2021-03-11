@@ -13,7 +13,7 @@ dependencies:
   google_polyline_algorithm: ^3.0.0
   google_maps_flutter: ^2.0.1
   google_directions_api: ^0.6.0
-  google_maps: ^4.0.0
+  google_maps: ^5.0.1
   http: ^0.13.0
   flinq: ^2.0.1
   uuid: ^3.0.1
